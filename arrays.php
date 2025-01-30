@@ -94,5 +94,18 @@ foreach($books as $book){
     }
 }
 
+// Print this Multidimensional Index Array using forEach loop in a table
+echo "<br> Print this Multidimensional Index Array using forEach loop in a table <br>";
+echo "<table border='2' cellpadding='5' cellspacing='0'>";
+echo "<tr><th>Title</th><th>Author</th><th>Year</th></tr>";
+foreach($books as $book){
+    echo "<tr>";
+    foreach($book as $detail){
+        echo "<td>".$detail."</td>";
+    }
+    echo "</tr>";
+}
+echo "</table>";
+
 
 ?>
