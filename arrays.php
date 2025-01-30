@@ -57,6 +57,25 @@ foreach($students_ages as $student => $age){
     echo $student." is ".$age." years old.<br>";
 }
 
+// Multidimensional Index Array
+echo "<h2>Multidimensional Index Array</h2>";
+$books = [
+    ["The Great Gatsby", "F. Scott Fitzgerald", 1925],
+    ["To Kill a Mockingbird", "Harper Lee", 1960],
+    ["1984", "George Orwell", 1949],
+    ["Pride and Prejudice", "Jane Austen", 1813],
+    ["The Catcher in the Rye", "J.D. Salinger", 1951]
+];
+
+// Print this Multidimensional Index Array using fixed index
+echo "Print this Multidimensional Index Array using fixed index <br>";
+echo $books[0][0]."<br>";
+echo $books[0][1]."<br>";
+echo $books[0][2]."<br>";
+echo $books[1][0]."<br>";
+echo $books[1][1]."<br>";
+echo $books[1][2]."<br>";
+
 
 
 ?>
