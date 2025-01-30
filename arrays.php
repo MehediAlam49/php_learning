@@ -125,6 +125,21 @@ foreach($students_results as $student => $results){
     }
 }
 
+// Print this Multidimensional Associative Array using forEach loop in a table
+echo "<br> Print this Multidimensional Associative Array using forEach loop in a table <br>";
+echo "<table border='2' cellpadding='5' cellspacing='0'>";
+echo "<tr><th>Student</th><th>Subject</th><th>Score</th></tr>";
+foreach($students_results as $student => $results){
+    foreach($results as $subject => $score){
+        echo "<tr>";
+        echo "<td>".$student."</td>";
+        echo "<td>".$subject."</td>";
+        echo "<td>".$score."</td>";
+        echo "</tr>";
+    }
+}
+echo "</table>";
+
 
 
 
