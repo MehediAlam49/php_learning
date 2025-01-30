@@ -167,6 +167,26 @@ foreach($colors as list($color1, $color2, $color3)){
 echo "</table>";
 
 
+// Search a value in an array using in_array() function
+echo "<h2>Search a value in an array using in_array() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+if(in_array("apple", $fruits)){
+    echo "apple is present in the array.<br>";
+}else{
+    echo "apple is not present in the array.<br>";
+}
+
+
+// Search a value in an array using array_search() function
+echo "<h2>Search a value in an array using array_search() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+$index = array_search("apple", $fruits);
+if($index !== false){
+    echo "apple is present in the array at index ".$index."<br>";
+}else{
+    echo "apple is not present in the array.<br>";
+}
+
 
 
 
