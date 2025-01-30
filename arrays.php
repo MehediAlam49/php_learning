@@ -188,6 +188,15 @@ if($index !== false){
 }
 
 
+// Replace a value in an array using array_replace() function
+echo "<h2>Replace a value in an array using array_replace() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+$new_fruits = ["Mango", "watermelon", "grape"];
+$fruits = array_replace($fruits, $new_fruits);
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
 
 
 ?>
