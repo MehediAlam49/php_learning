@@ -231,4 +231,13 @@ print_r($fruits);
 echo "</pre>";
 
 
+// Remove a value in an array using array_shift() function
+echo "<h2>Remove a value in an array using array_shift() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+array_shift($fruits);
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
+
 ?>
