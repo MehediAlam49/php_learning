@@ -44,5 +44,19 @@ echo "<li>".$students_ages["Charlie"]."</li>";
 echo "</ul>";
 
 
+// print the array using forEach loop in index array
+echo "<br> print the array using forEach loop in index array <br>";
+foreach($fruits as $fruit){
+    echo $fruit."<br>";
+}
+
+
+// print the array using forEach loop in associative array
+echo "<br> print the array using forEach loop in associative array <br>";
+foreach($students_ages as $student => $age){
+    echo $student." is ".$age." years old.<br>";
+}
+
+
 
 ?>
