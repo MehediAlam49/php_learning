@@ -306,6 +306,14 @@ echo "<pre>";
 print_r($fruits);
 echo "</pre>";
 
+// Insert without deleting a portion of an array using array_splice() function
+echo "<h2>Insert without deleting a portion of an array using array_splice() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+array_splice($fruits, 1, 0, ["Mango", "watermelon", "grape"]);
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
 
 
 
