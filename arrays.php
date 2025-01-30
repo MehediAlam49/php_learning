@@ -239,5 +239,13 @@ echo "<pre>";
 print_r($fruits);
 echo "</pre>";
 
+// Add a value in an array using array_unshift() function
+echo "<h2>Add a value in an array using array_unshift() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+array_unshift($fruits, "Mango", "watermelon", "grape");
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
 
 ?>
