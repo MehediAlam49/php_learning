@@ -142,6 +142,17 @@ echo "</table>";
 
 
 
+// Multidimensional Array forEach loop with list
+echo "<h2>Multidimensional Array forEach loop with list</h2>";
+$colors = [
+    ["red", "green", "blue"],
+    ["yellow", "orange", "purple"],
+    ["pink", "black", "white"]
+];
+foreach($colors as list($color1, $color2, $color3)){
+    echo $color1.", ".$color2.", ".$color3."<br>";
+}
+
 
 
 
