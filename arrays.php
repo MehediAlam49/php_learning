@@ -257,4 +257,19 @@ echo "<pre>";
 print_r($fruits);
 echo "</pre>";
 
+// Join an array using array_merge_recursive() function
+echo "<h2>Join an array using array_merge_recursive() function</h2>";
+$fruits = [
+    ["apple", "banana", "cherry"],
+    ["orange", "kiwi", "grape"]
+];
+$new_fruits = [
+    ["Mango", "watermelon", "grape"],
+    ["apple", "banana", "cherry"]
+];
+$fruits = array_merge_recursive($fruits, $new_fruits);
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
 ?>
