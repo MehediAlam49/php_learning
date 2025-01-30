@@ -272,4 +272,33 @@ echo "<pre>";
 print_r($fruits);
 echo "</pre>";
 
+// Join an array using array_combine() function
+echo "<h2>Join an array using array_combine() function</h2>";
+$names = ["Alice", "Bob", "Charlie"];
+$ages = [25, 30, 35];
+$students = array_combine($names, $ages);
+echo "<pre>";
+print_r($students);
+echo "</pre>";
+
+// Extract a portion of an array using array_slice() function
+echo "<h2>Extract a portion of an array using array_slice() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+$fruits = array_slice($fruits, 1, 3);
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
+// Remove a portion of an array using array_splice() function
+echo "<h2>Remove a portion of an array using array_splice() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+array_splice($fruits, 1, 3);
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
+
+
+
+
 ?>
