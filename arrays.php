@@ -197,6 +197,21 @@ echo "<pre>";
 print_r($fruits);
 echo "</pre>";
 
+// Replace a Multidimensional array value in an array using array_replace_recursive() function
+echo "<h2>Replace a Multidimensional array value in an array using array_replace_recursive() function</h2>";
+$fruits = [
+    ["apple", "banana", "cherry"],
+    ["orange", "kiwi", "grape"]
+];
+$new_fruits = [
+    ["Mango", "watermelon", "grape"],
+    ["apple", "banana", "cherry"]
+];
+$fruits = array_replace_recursive($fruits, $new_fruits);
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
 
 
 ?>
