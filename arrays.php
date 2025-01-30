@@ -213,5 +213,22 @@ print_r($fruits);
 echo "</pre>";
 
 
+// Add a value in an array using array_push() function
+echo "<h2>Add a value in an array using array_push() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+array_push($fruits, "Mango", "watermelon", "grape");
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
+
+// Remove a value in an array using array_pop() function
+echo "<h2>Remove a value in an array using array_pop() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+array_pop($fruits);
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
 
 ?>
