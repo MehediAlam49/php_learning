@@ -77,5 +77,22 @@ echo $books[1][1]."<br>";
 echo $books[1][2]."<br>";
 
 
+// Print this Multidimensional Index Array using for loop
+echo "<br> Print this Multidimensional Index Array using for loop <br>";
+for($i = 0; $i < count($books); $i++){
+    for($j = 0; $j < count($books[$i]); $j++){
+        echo $books[$i][$j]."<br>";
+    }
+}
+
+
+// Print this Multidimensional Index Array using forEach loop
+echo "<br> Print this Multidimensional Index Array using forEach loop <br>";
+foreach($books as $book){
+    foreach($book as $detail){
+        echo $detail."<br>";
+    }
+}
+
 
 ?>
