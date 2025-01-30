@@ -248,4 +248,13 @@ print_r($fruits);
 echo "</pre>";
 
 
+// Join an array using array_merge() function
+echo "<h2>Join an array using array_merge() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+$new_fruits = ["Mango", "watermelon", "grape"];
+$fruits = array_merge($fruits, $new_fruits);
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
 ?>
