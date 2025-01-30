@@ -27,6 +27,21 @@ for($i = 0; $i < count($fruits); $i++){
 }
 
 
+echo "<h2>Associative Array</h2>";
+$students_ages = array("Alice" => 20, "Bob" => 30, "Charlie" => 40);
+// print the array using fixed index in associative array
+echo "print the array using fixed index in associative array <br>";
+echo $students_ages["Alice"]."<br>";
+echo $students_ages["Bob"]."<br>";
+echo $students_ages["Charlie"]."<br>";
+
+// print the array using unordered list in associative array
+echo "<br> print the array using unordered list in associative array <br>";
+echo "<ul>";
+echo "<li>".$students_ages["Alice"]."</li>";
+echo "<li>".$students_ages["Bob"]."</li>";
+echo "<li>".$students_ages["Charlie"]."</li>";
+echo "</ul>";
 
 
 
