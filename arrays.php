@@ -153,6 +153,19 @@ foreach($colors as list($color1, $color2, $color3)){
     echo $color1.", ".$color2.", ".$color3."<br>";
 }
 
+// Multidimensional Array forEach loop with list in a table
+echo "<br> Multidimensional Array forEach loop with list in a table <br>";
+echo "<table border='2' cellpadding='5' cellspacing='0'>";
+echo "<tr><th>Color 1</th><th>Color 2</th><th>Color 3</th></tr>";
+foreach($colors as list($color1, $color2, $color3)){
+    echo "<tr>";
+    echo "<td>".$color1."</td>";
+    echo "<td>".$color2."</td>";
+    echo "<td>".$color3."</td>";
+    echo "</tr>";
+}
+echo "</table>";
+
 
 
 
