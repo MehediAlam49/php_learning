@@ -108,4 +108,27 @@ foreach($books as $book){
 echo "</table>";
 
 
+// Multidimensional Associative Array
+echo "<h2>Multidimensional Associative Array</h2>";
+$students_results = [
+    "Alice" => ["Math" => 85, "English" => 92, "Science" => 78],
+    "Bob" => ["Math" => 90, "English" => 88, "Science" => 95],
+    "Charlie" => ["Math" => 80, "English" => 85, "Science" => 90]
+];
+
+// Print this Multidimensional Associative Array using forEach loop
+echo "<br> Print this Multidimensional Associative Array using forEach loop <br>";
+foreach($students_results as $student => $results){
+    echo $student.":<br>";
+    foreach($results as $subject => $score){
+        echo $subject.": ".$score."<br>";
+    }
+}
+
+
+
+
+
+
+
 ?>
