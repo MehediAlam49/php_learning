@@ -508,6 +508,30 @@ echo "<pre>";
 print_r($product);
 echo "</pre>";
 
+// Find a random value in an array using array_rand() function
+echo "<h2>Find a random value in an array using array_rand() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+$random = array_rand($fruits);
+echo "<pre>";
+print_r($random);
+echo "</pre>";
+
+// Find a shuffle value in an array using shuffle() function
+echo "<h2>Find a shuffle value in an array using shuffle() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+shuffle($fruits);
+echo "<pre>";
+print_r($fruits);
+echo "</pre>";
+
+// fill the array using array_fill() function
+echo "<h2>Fill the array using array_fill() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+$filled = array_fill(1, 3, "Mango");
+echo "<pre>";
+print_r($filled);
+echo "</pre>";
+
 
 
 
