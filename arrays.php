@@ -484,6 +484,14 @@ echo "<pre>";
 print_r($flipped);
 echo "</pre>";
 
+// change the case of the keys in an array using array_change_key_case() function
+echo "<h2>change the case of the keys in an array using array_change_key_case() function</h2>";
+$fruits = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+$changed = array_change_key_case($fruits, CASE_UPPER);
+echo "<pre>";
+print_r($changed);
+echo "</pre>";
+
 
 
 
