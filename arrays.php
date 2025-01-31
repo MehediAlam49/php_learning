@@ -452,6 +452,15 @@ print_r($values);
 echo "</pre>";
 
 
+// Find the unique values from associative array using array_unique() function
+echo "<h2>Find the unique values from associative array using array_unique() function</h2>";
+$fruits = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+$values = array_unique($fruits);
+echo "<pre>";
+print_r($values);
+echo "</pre>";
+
+
 
 
 
