@@ -361,4 +361,14 @@ print_r($common_fruits);
 echo "</pre>";
 
 
+// Find a common keys in two associative arrays using array_intersect_key() function
+echo "<h2>Find a common keys in two associative arrays using array_intersect_key() function</h2>";
+$fruits1 = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+$fruits2 = ["apple" => "red", "grape" => "green", "watermelon" => "red", "lemon" => "orange", "kiwi" => "green"];
+$common_fruits = array_intersect_key($fruits1, $fruits2);
+echo "<pre>";
+print_r($common_fruits);
+echo "</pre>";
+
+
 ?>
