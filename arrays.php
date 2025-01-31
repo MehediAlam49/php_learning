@@ -315,6 +315,32 @@ print_r($fruits);
 echo "</pre>";
 
 
+// Find a key in an array using array_keys() function
+echo "<h2>Find a key in an array using array_keys() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+$keys = array_keys($fruits);
+echo "<pre>";
+print_r($keys);
+echo "</pre>";
+
+
+// Find a first key in an associative array using array_key_first() function
+echo "<h2>Find a first key in an associative array using array_key_first() function</h2>";
+$fruits = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+$first_key = array_key_first($fruits);
+echo "<pre>";
+print_r($first_key);
+echo "</pre>";
+
+// Find a last key in an associative array using array_key_last() function
+echo "<h2>Find a last key in an associative array using array_key_last() function</h2>";
+$fruits = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+$last_key = array_key_last($fruits);
+echo "<pre>";
+print_r($last_key);
+echo "</pre>";
+
+
 
 
 ?>
