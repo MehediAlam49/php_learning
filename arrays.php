@@ -443,6 +443,14 @@ echo "<pre>";
 print_r($diff_fruits);
 echo "</pre>";
 
+// Find values from associative array using array_values() function
+echo "<h2>Find values from associative array using array_values() function</h2>";
+$fruits = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+$values = array_values($fruits);
+echo "<pre>";
+print_r($values);
+echo "</pre>";
+
 
 
 
