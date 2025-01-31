@@ -341,6 +341,15 @@ print_r($last_key);
 echo "</pre>";
 
 
+// Find an associative array keys exist using array_key_exists() function
+echo "<h2>Find an associative array keys exist using array_key_exists() function</h2>";
+$fruits = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+if(array_key_exists("apple", $fruits)){
+    echo "apple is present in the array.<br>";
+}else{
+    echo "apple is not present in the array.<br>";
+}
+
 
 
 ?>
