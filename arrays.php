@@ -476,6 +476,14 @@ echo "<pre>";
 print_r($values);
 echo "</pre>";
 
+// Swap the keys and values in an array using array_flip() function
+echo "<h2>Swap the keys and values in an array using array_flip() function</h2>";
+$fruits = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+$flipped = array_flip($fruits);
+echo "<pre>";
+print_r($flipped);
+echo "</pre>";
+
 
 
 
