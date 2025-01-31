@@ -380,4 +380,46 @@ print_r($common_fruits);
 echo "</pre>";
 
 
+// Find a common values in two associative arrays using user defined array_uintersect() function
+echo "<h2>Find a common values in two associative arrays using user defined array_intersect() function</h2>";
+$fruits1 = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+$fruits2 = ["apple" => "red", "grape" => "green", "watermelon" => "red", "lemon" => "orange", "kiwi" => "green"];
+function array_intersect_custom($array1, $array2){
+    $common = [];
+    foreach($array1 as $key => $value){
+        if(array_key_exists($key, $array2) && $array2[$key] == $value){
+            $common[$key] = $value;
+        }
+    }
+    return $common;
+}
+$common_fruits = array_intersect_custom($fruits1, $fruits2);
+echo "<pre>";
+print_r($common_fruits);
+echo "</pre>";
+
+// Find a common keys in two associative arrays using user defined array_uintersect_key() function
+echo "<h2>Find a common keys in two associative arrays using user defined array_intersect_key() function</h2>";
+$fruits1 = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+$fruits2 = ["apple" => "red", "grape" => "green", "watermelon" => "red", "lemon" => "orange", "kiwi" => "green"];
+function array_intersect_key_custom($array1, $array2){
+    $common = [];
+    foreach($array1 as $key => $value){
+        if(array_key_exists($key, $array2)){
+            $common[$key] = $value;
+        }
+    }
+    return $common;
+}
+$common_fruits = array_intersect_key_custom($fruits1, $fruits2);
+echo "<pre>";
+print_r($common_fruits);
+echo "</pre>";
+
+
+
+
+
+
+
 ?>
