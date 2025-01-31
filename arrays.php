@@ -500,6 +500,14 @@ echo "<pre>";
 print_r($sum);
 echo "</pre>";
 
+// Product the values in an array using array_product() function
+echo "<h2>Product the values in an array using array_product() function</h2>";
+$numbers = [1, 2, 3, 4, 5];
+$product = array_product($numbers);
+echo "<pre>";
+print_r($product);
+echo "</pre>";
+
 
 
 
