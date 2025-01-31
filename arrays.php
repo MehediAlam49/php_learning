@@ -425,6 +425,15 @@ echo "<pre>";
 print_r($diff_fruits);
 echo "</pre>";
 
+// Find a different keys in two associative arrays using array_diff_key() function
+echo "<h2>Find a different keys in two associative arrays using array_diff_key() function</h2>";
+$fruits1 = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+$fruits2 = ["apple" => "red", "grape" => "green", "watermelon" => "red", "lemon" => "orange", "kiwi" => "green"];
+$diff_fruits = array_diff_key($fruits1, $fruits2);
+echo "<pre>";
+print_r($diff_fruits);
+echo "</pre>";
+
 
 
 
