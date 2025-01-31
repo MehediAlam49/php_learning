@@ -526,12 +526,18 @@ echo "</pre>";
 
 // fill the array using array_fill() function
 echo "<h2>Fill the array using array_fill() function</h2>";
-$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
 $filled = array_fill(1, 3, "Mango");
 echo "<pre>";
 print_r($filled);
 echo "</pre>";
 
+// fill the array using array_fill_keys() function
+echo "<h2>Fill the array using array_fill_keys() function</h2>";
+$fruits = ["apple", "banana", "cherry", "orange", "kiwi"];
+$filled = array_fill_keys($fruits, "Mango");
+echo "<pre>";
+print_r($filled);
+echo "</pre>";
 
 
 
