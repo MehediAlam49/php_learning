@@ -492,6 +492,14 @@ echo "<pre>";
 print_r($changed);
 echo "</pre>";
 
+// Sum the values in an array using array_sum() function
+echo "<h2>Sum the values in an array using array_sum() function</h2>";
+$numbers = [1, 2, 3, 4, 5];
+$sum = array_sum($numbers);
+echo "<pre>";
+print_r($sum);
+echo "</pre>";
+
 
 
 
