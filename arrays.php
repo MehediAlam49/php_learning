@@ -460,6 +460,22 @@ echo "<pre>";
 print_r($values);
 echo "</pre>";
 
+// Find the split values from associative array using array_chunk() function
+echo "<h2>Find the split values from associative array using array_chunk() function</h2>";
+$fruits = ["apple" => "red", "banana" => "yellow", "cherry" => "red", "orange" => "orange", "kiwi" => "green"];
+$chunk = array_chunk($fruits, 2);
+echo "<pre>";
+print_r($chunk);
+echo "</pre>";
+
+// Find the extract a single column of values from a multidimensional array using array_column() function
+echo "<h2>Find the extract a single column of values from a multidimensional array using array_column() function</h2>";
+$fruits = [["apple", "red"], ["banana", "yellow"], ["cherry", "red"], ["orange", "orange"], ["kiwi", "green"]];
+$values = array_column($fruits, 0);
+echo "<pre>";
+print_r($values);
+echo "</pre>";
+
 
 
 
