@@ -29,4 +29,14 @@ $lastName = "Doe";
 $fullName = $firstName . " " . $lastName;
 echo $fullName;
 
+echo "<br> <br>";
+
+// Nowdoc
+$firstName = "John";
+$lastName = "Doe";
+$fullName = $firstName . " " . $lastName;
+echo <<<EOT
+    $fullName
+EOT;
+
 ?>
