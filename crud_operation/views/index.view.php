@@ -30,7 +30,10 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td></td>
+                                        <td>1</td>
+                                        <td>John</td>
+                                        <td>wick</td>
+                                        <td>25</td>
                                     </tr>
                                 </tbody>
                         </div>
