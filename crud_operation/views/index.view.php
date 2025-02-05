@@ -18,7 +18,7 @@
                             <h1>crud operation</h1>
                         </div>
                         <div class="card-body">
-                            <table class="table table-striped"></table>
+                            <table class="table table-hover table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th scope="col">id</th>
@@ -34,8 +34,11 @@
                                         <td>John</td>
                                         <td>wick</td>
                                         <td>25</td>
+                                        <td>not yet</td>
                                     </tr>
                                 </tbody>
+                            </table>
+
                         </div>
                     </div>
                 </div>
