@@ -21,21 +21,29 @@
                             <table class="table table-hover table-bordered table-striped">
                                 <thead>
                                     <tr>
-                                        <th scope="col">id</th>
-                                        <th scope="col">First Name</th>
-                                        <th scope="col">Last Name</th>
+                                        <th scope="col">SL</th>
+                                        <th scope="col">Name</th>
                                         <th scope="col">Age</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Created At</th>
+                                        <th scope="col">Updated At</th>
                                         <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php foreach ($students_data as $key => $data) : ?>
                                     <tr>
-                                        <td>1</td>
-                                        <td>John</td>
-                                        <td>wick</td>
-                                        <td>25</td>
+                                        <td><?= $key + 1 ?></td>
+                                        <td><?= $data['name'] ?></td>
+                                        <td><?= $data['age'] ?></td>
+                                        <td><?= $data['email'] ?></td>
+                                        <td><?= $data['status'] == 1 ? 'active' : 'inactive' ?></td>
+                                        <td><?= date('d M Y, h:i:s A', strtotime($data['created_at'])) ?></td>
+                                        <td><?= $data['updated_at']? date('d M Y, h:i:s A', strtotime($data['updated_at'])): 'null' ?></td>
                                         <td>not yet</td>
                                     </tr>
+                                    <?php endforeach; ?>
                                 </tbody>
                             </table>
 
