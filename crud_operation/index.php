@@ -6,7 +6,7 @@ $sql = "SELECT * FROM students";
 $result = $connection->query($sql);
 
 // check results
-$datas = [];
+$students_data = [];
 if($result->num_rows > 0){
     $students_data = $result->fetch_all(MYSQLI_ASSOC);
 }
