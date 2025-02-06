@@ -14,8 +14,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-header">
-                            <h1>crud operation</h1>
+                        <div class="card-header d-flex justify-content-between">
+                            <h1>Student Management</h1>
+                            <a href="insert.php" class="btn btn-primary">Add New</a>
                         </div>
                         <div class="card-body">
                             <table class="table table-hover table-bordered table-striped">
