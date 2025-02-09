@@ -15,25 +15,26 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
-                            <h1>Add Student</h1>
+                            <h1>Edit Student</h1>
                             <a href="index.php" class="btn btn-primary">Back</a>
                         </div>
                         <div class="card-body">
-                            <form action="" method="POST">
+                            <form action="update.php" method="POST">
+                                <input type="hidden" name="id" value="<? echo $data['id']; ?>">
                                 <div class="mb-3">
                                     <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name">
+                                    <input type="text" class="form-control" id="name" name="name" value="<?= $data['name'] ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label for="age" class="form-label">Age</label>
-                                    <input type="number" class="form-control" id="age" name="age">
+                                    <input type="number" class="form-control" id="age" name="age" value="<?= $data['age'] ?>">
                                 </div>
                                 <div class="mb-3">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email">
+                                    <input type="email" class="form-control" id="email" name="email" value="<?= $data['email'] ?>">
                                 </div>
                                 <div class="mb-3">
-                                    <input type="submit" name="submit" value="Create" class="btn btn-primary">
+                                    <input type="submit" name="update" value="Update" class="btn btn-primary">
                                 </div>
                             </form>
                         </div>

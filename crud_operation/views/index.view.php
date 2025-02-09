@@ -42,7 +42,11 @@
                                         <td><?= $data['status'] == 1 ? 'active' : 'inactive' ?></td>
                                         <td><?= date('d M Y, h:i:s A', strtotime($data['created_at'])) ?></td>
                                         <td><?= $data['updated_at']? date('d M Y, h:i:s A', strtotime($data['updated_at'])): 'null' ?></td>
-                                        <td>not yet</td>
+                                        <td>
+                                            <div class="btn-group roles" role="group">
+                                                <a href="edit.php?id=<?= $data['id'] ?>" class="btn btn-primary">Edit</a>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <?php endforeach; ?>
                                 </tbody>
