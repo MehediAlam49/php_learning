@@ -18,6 +18,38 @@
             <input type="submit" value="Submit" name="submit_btn">
         </form>
     </div>
+
+
+
+    <?php
+        // insert data
+        if (isset($_POST['submit_btn'])) {
+            $first_name = $_POST['first_name'];
+            $last_name = $_POST['last_name'];
+            $age = $_POST['age'];
+
+            $sql = "INSERT INTO student (first_name, last_name, age) VALUES ('$first_name', '$last_name', '$age')";
+
+            $data =mysqli_query($con, $sql);
+
+            if ($data) {
+                ?>
+                <script>
+                    alert("Data inserted successfully");
+                </script>
+                <?php
+            }else{
+                ?>
+                <script>
+                    alert("Data not inserted");
+                </script>
+                <?php
+            }
+        }
+    
+    ?>
+
+
 </body>
 
 </html>
